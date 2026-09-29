@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+	<class name="com.elms.Models.LeaveRequest" table="leave_request">
+		<id name="request_id" column="request_id">
+			<generator class="increment"></generator>
+		</id>
+
+		
+		<many-to-one name="employee"
+			class="com.elms.Models.Employee" column="emp_id"  lazy="false" />
+
+		<many-to-one name="leaveType"
+			class="com.elms.Models.LeaveType" column="leave_type_id"  lazy="false" />
+
+		<property name="from_date" />
+
+		<property name="to_date" />
+
+		<property name="days" />
+
+		<property name="applied_date" />
+
+		<property name="status" />
+
+	</class>
+</hibernate-mapping>

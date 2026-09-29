@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+	<class name="com.elms.Models.Departments" table="departments">
+		<id name="dept_id" column="dept_id">
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="dept_name" column="dept_name"></property>
+		<property name="created_date" column="created_date"></property>
+
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* =====================================================
+   ADMIN MODULE CSS
+   Employee Leave Management System
+===================================================== */
+
+/* ==========================
+   PAGE TITLE
+========================== */
+
+.page-title{
+    font-size:2rem;
+    font-weight:700;
+    color:#343a40;
+}
+
+.text-muted{
+    font-size:15px;
+}
+
+
+/* ==========================
+   DASHBOARD CARDS
+========================== */
+
+.dashboard-card{
+
+    border:none;
+    border-radius:15px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+    height:170px;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+}
+
+.dashboard-card .card-body{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.dashboard-card h5{
+
+    font-size:18px;
+
+    margin-top:10px;
+
+    font-weight:600;
+
+}
+
+.dashboard-card h2{
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    margin-top:10px;
+
+}
+
+
+/* ==========================
+   CARD TOP BORDER COLORS
+========================== */
+
+.approved-card{
+
+    border-top:5px solid #198754;
+
+}
+
+.pending-card{
+
+    border-top:5px solid #ffc107;
+
+}
+
+.rejected-card{
+
+    border-top:5px solid #dc3545;
+
+}
+
+.employee-card{
+
+    border-top:5px solid #0d6efd;
+
+}
+
+.department-card{
+
+    border-top:5px solid #0dcaf0;
+
+}
+
+.leave-card{
+
+    border-top:5px solid #6c757d;
+
+}
+
+
+/* ==========================
+   TABLE CARD
+========================== */
+
+.dashboard-table{
+
+    border:none;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+}
+
+.dashboard-table .card-header{
+
+    padding:15px 20px;
+
+}
+
+
+/* ==========================
+   TABLE
+========================== */
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead th{
+
+    font-weight:600;
+
+    text-align:center;
+
+    white-space:nowrap;
+
+}
+
+.table tbody td{
+
+    vertical-align:middle;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f8f9fa;
+
+}
+
+
+/* ==========================
+   BADGES
+========================== */
+
+.badge{
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+
+    border-radius:8px;
+
+}
+
+
+/* ==========================
+   COMMON FORM CARD
+   (Used later)
+========================== */
+
+.form-card{
+
+    border:none;
+
+    border-radius:15px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.form-card .card-header{
+
+    font-weight:600;
+
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.dashboard-card{
+
+    height:160px;
+
+}
+
+.dashboard-card h2{
+
+    font-size:28px;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.page-title{
+
+    font-size:1.6rem;
+
+}
+
+.dashboard-card{
+
+    height:150px;
+
+}
+
+.dashboard-card h5{
+
+    font-size:16px;
+
+}
+
+.dashboard-card h2{
+
+    font-size:26px;
+
+}
+
+.table{
+
+    font-size:14px;
+
+}
+
+}
+
+
+@media(max-width:576px){
+
+.page-title{
+
+    font-size:1.4rem;
+
+}
+
+.dashboard-card{
+
+    margin-bottom:10px;
+
+}
+
+.dashboard-card h2{
+
+    font-size:24px;
+
+}
+
+.badge{
+
+    font-size:11px;
+
+    padding:6px 10px;
+
+}
+
+.success-msg{
+    background:#d4edda;
+    color:#155724;
+    padding:12px;
+    border:1px solid #c3e6cb;
+    border-radius:5px;
+    margin-bottom:15px;
+}
+
+.error-msg{
+    background:#f8d7da;
+    color:#721c24;
+    padding:12px;
+    border:1px solid #f5c6cb;
+    border-radius:5px;
+    margin-bottom:15px;
+}}

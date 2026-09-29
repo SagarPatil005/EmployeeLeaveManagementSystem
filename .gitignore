@@ -1,0 +1,21 @@
+
+# Maven build output
+target/
+build/
+
+# Eclipse settings
+.settings/
+.classpath
+
+# Local Hibernate configuration (contains DB credentials)
+src/main/java/hibernate.cfg.xml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+

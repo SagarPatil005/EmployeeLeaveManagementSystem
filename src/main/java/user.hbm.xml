@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+	<class name="com.elms.Models.User" table="user">
+		<id name="user_id" column="user_id">
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="username" column="username"></property>
+		<property name="password" column="password"></property>
+		<property name="role" column="role"></property>
+
+
+	</class>
+</hibernate-mapping>

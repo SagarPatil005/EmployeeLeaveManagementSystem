@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+	<class name="com.elms.Models.LeaveType" table="leave_type">
+		<id name="leaveTypeId" column="leave_type_id">
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="leaveName" column="leave_name"></property>
+		<property name="createdDate" column="created_date"></property>
+
+		<set name="leaveRequests" inverse="true" lazy="true">
+
+			<key column="leave_type_id" />
+
+			<one-to-many class="com.elms.Models.LeaveRequest" />
+
+		</set>
+
+	</class>
+</hibernate-mapping>

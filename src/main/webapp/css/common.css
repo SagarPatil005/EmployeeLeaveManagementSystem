@@ -1,0 +1,546 @@
+@charset "UTF-8";
+/* ===========================
+   GLOBAL
+=========================== */
+/* ===============================
+        Pagination
+=================================*/
+
+.pagination-wrapper{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    margin-top:20px;
+
+    gap:15px;
+
+}
+
+.pagination-info{
+
+    color:#6c757d;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.pagination{
+
+    gap:6px;
+
+}
+
+.pagination .page-link{
+
+    min-width:40px;
+
+    height:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:10px;
+
+    border:1px solid #dee2e6;
+
+    color:#0d6efd;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.pagination .page-link:hover{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border-color:#0d6efd;
+
+}
+
+.pagination .active .page-link{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border-color:#0d6efd;
+
+    box-shadow:0 5px 12px rgba(13,110,253,.35);
+
+}
+
+.pagination .disabled .page-link{
+
+    color:#adb5bd;
+
+    background:#f8f9fa;
+
+    pointer-events:none;
+
+}
+
+@media(max-width:768px){
+
+.pagination-wrapper{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.pagination{
+
+    flex-wrap:wrap;
+
+}
+
+}
+.pagination-wrapper{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.pagination-info{
+
+    color:#6c757d;
+
+    font-size:15px;
+
+}
+
+.pagination .page-link{
+
+    border-radius:8px;
+
+    margin:0 3px;
+
+    color:#0d6efd;
+
+    transition:.3s;
+
+}
+
+.pagination .page-link:hover{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+.pagination .active .page-link{
+
+    background:#0d6efd;
+
+    border-color:#0d6efd;
+
+}
+
+.pagination .disabled .page-link{
+
+    cursor:not-allowed;
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    height:100%;
+    font-family:'Segoe UI',sans-serif;
+    background:#f5f7fa;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    height:65px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:1050;
+}
+
+.navbar-brand{
+    font-size:24px;
+    font-weight:700;
+}
+
+.navbar-brand i{
+    margin-right:8px;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+
+    width:260px;
+    min-height:calc(100vh - 65px);
+
+    background:#fff;
+
+    border-right:1px solid #dee2e6;
+
+    position:fixed;
+
+    top:65px;
+
+    left:0;
+
+    overflow-y:auto;
+
+}
+
+.sidebar .nav-link{
+
+    color:#495057;
+
+    font-size:16px;
+
+    padding:14px 20px;
+
+    transition:.3s;
+
+}
+
+.sidebar .nav-link i{
+
+    width:25px;
+
+}
+
+.sidebar .nav-link:hover{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+.sidebar .nav-link.active{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.main-content{
+
+    margin-left:260px;
+
+    padding:25px;
+
+    min-height:calc(100vh - 120px);
+
+}
+
+/* ===========================
+   PAGE HEADER
+=========================== */
+
+.page-title{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.page-subtitle{
+
+    color:#6c757d;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.custom-card{
+
+    border:none;
+
+    border-radius:16px;
+
+    transition:.3s;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+
+}
+
+.custom-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    background:#212529;
+
+    color:white;
+
+    padding:15px;
+
+    margin-left:260px;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:991px){
+
+.sidebar{
+
+display:none;
+
+}
+
+.main-content{
+
+margin-left:0;
+
+padding:20px;
+
+}
+
+.footer{
+
+margin-left:0;
+
+}
+
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+
+    width:260px;
+
+    position:fixed;
+
+    top:65px;
+
+    left:0;
+
+    bottom:0;
+
+    background:#fff;
+
+    border-right:1px solid #dee2e6;
+
+    overflow-y:auto;
+
+    z-index:1000;
+
+}
+
+.sidebar .nav-link{
+
+    color:#495057;
+
+    padding:15px 22px;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.sidebar .nav-link i{
+
+    width:28px;
+
+}
+
+.sidebar .nav-link:hover{
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+.sidebar .nav-link.active{
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+/* Mobile Sidebar */
+
+.offcanvas{
+
+    width:260px;
+
+}
+
+.offcanvas .nav-link{
+
+    color:#495057;
+
+    padding:15px;
+
+    font-size:16px;
+
+}
+
+.offcanvas .nav-link:hover{
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    background:#ffffff;
+
+    border-top:1px solid #dee2e6;
+
+    color:#6c757d;
+
+    padding:18px 25px;
+
+    margin-left:260px;
+
+    font-size:15px;
+
+}
+
+@media(max-width:991px){
+
+.footer{
+
+margin-left:0;
+
+text-align:center;
+
+}
+
+}
+/* ===========================
+   BREADCRUMB
+=========================== */
+
+.breadcrumb{
+
+    margin-bottom:10px;
+
+    background:none;
+
+}
+
+.breadcrumb-item a{
+
+    text-decoration:none;
+
+}
+
+/* ===========================
+   PAGE TITLE
+=========================== */
+
+.page-title{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#212529;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.custom-card{
+
+    border:none;
+
+    border-radius:15px;
+
+    box-shadow:0 0 15px rgba(0,0,0,.08);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.page-title{
+
+font-size:25px;
+
+}
+
+.main-content{
+
+padding:15px;
+
+}
+
+
+}
